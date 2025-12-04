@@ -14,7 +14,10 @@
       "Bash(pip install:*)",
       "Bash(pip show:*)",
       "Bash(findstr:*)",
-      "Bash(pip uninstall:*)"
+      "Bash(pip uninstall:*)",
+      "Bash(poetry env:*)",
+      "Bash(poetry run marker_single:*)",
+      "Bash(tasklist:*)"
     ],
     "deny": [],
     "ask": []
