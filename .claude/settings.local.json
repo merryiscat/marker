@@ -17,7 +17,10 @@
       "Bash(pip uninstall:*)",
       "Bash(poetry env:*)",
       "Bash(poetry run marker_single:*)",
-      "Bash(tasklist:*)"
+      "Bash(tasklist:*)",
+      "Bash(Select-String \"Version|Location\")",
+      "Bash(powershell -Command \"& .\\marker_gpu_env\\Scripts\\pip.exe list | Select-String ''torch|marker|psutil''\")",
+      "Bash(powershell -Command \"& .\\marker_gpu_env\\Scripts\\python.exe -c \"\"import torch; print(''CUDA available:'', torch.cuda.is_available()); print(''GPU count:'', torch.cuda.device_count())\"\"\")"
     ],
     "deny": [],
     "ask": []
