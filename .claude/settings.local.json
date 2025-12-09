@@ -1,26 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "mcp__serena__initial_instructions",
-      "mcp__serena__check_onboarding_performed",
-      "mcp__serena__list_memories",
-      "mcp__serena__list_dir",
-      "mcp__serena__activate_project",
-      "mcp__serena__get_symbols_overview",
-      "Bash(poetry run pytest:*)",
-      "mcp__serena__find_symbol",
-      "Bash(poetry --version:*)",
-      "mcp__serena__write_memory",
-      "Bash(pip install:*)",
-      "Bash(pip show:*)",
-      "Bash(findstr:*)",
-      "Bash(pip uninstall:*)",
-      "Bash(poetry env:*)",
-      "Bash(poetry run marker_single:*)",
-      "Bash(tasklist:*)",
-      "Bash(Select-String \"Version|Location\")",
-      "Bash(powershell -Command \"& .\\marker_gpu_env\\Scripts\\pip.exe list | Select-String ''torch|marker|psutil''\")",
-      "Bash(powershell -Command \"& .\\marker_gpu_env\\Scripts\\python.exe -c \"\"import torch; print(''CUDA available:'', torch.cuda.is_available()); print(''GPU count:'', torch.cuda.device_count())\"\"\")"
+      "Bash(nvidia-smi:*)"
     ],
     "deny": [],
     "ask": []
